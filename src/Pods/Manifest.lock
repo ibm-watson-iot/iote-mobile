@@ -1,0 +1,13 @@
+PODS:
+  - IMFCore (1.0.11)
+  - MQTTClient (0.4.0)
+
+DEPENDENCIES:
+  - IMFCore
+  - MQTTClient (= 0.4.0)
+
+SPEC CHECKSUMS:
+  IMFCore: 6a28c4a777819b9f957bf8c2644e3ebf72f2ccb6
+  MQTTClient: f9945abcd5e974a563005721a9652dc32d4a3b34
+
+COCOAPODS: 0.39.0

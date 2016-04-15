@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C136B541CA5D479005F507A /* ApplianceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C136B531CA5D479005F507A /* ApplianceTableViewCell.swift */; };
+		639EE24988FE7371E57AAEF0 /* libPods-IoT-Electronics-mobileApp-SWIFT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA166C0E6403886EAF1D636 /* libPods-IoT-Electronics-mobileApp-SWIFT.a */; };
+		792B235B1C89038900AF0117 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B235A1C89038900AF0117 /* AppDelegate.swift */; };
+		792B23601C89038900AF0117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792B235E1C89038900AF0117 /* Main.storyboard */; };
+		792B23631C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 792B23611C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodeld */; };
+		792B23651C89038900AF0117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792B23641C89038900AF0117 /* Assets.xcassets */; };
+		792B23681C89038900AF0117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792B23661C89038900AF0117 /* LaunchScreen.storyboard */; };
+		7939BE4B1CAECEC100F89175 /* BluemixScan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7939BE4A1CAECEC100F89175 /* BluemixScan.storyboard */; };
+		7939BE4D1CAED17F00F89175 /* BluemixConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7939BE4C1CAED17F00F89175 /* BluemixConfigViewController.swift */; };
+		795914451CA1818900C0200B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795914441CA1818900C0200B /* API.swift */; };
+		7986810D1CA964540066412D /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7986810C1CA964540066412D /* MQTTManager.swift */; };
+		799F3CD51CA8624700460810 /* CustomAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799F3CD41CA8624700460810 /* CustomAuth.swift */; };
+		79AF7C371C89156E0026BEC0 /* EnergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AF7C361C89156E0026BEC0 /* EnergyViewController.swift */; };
+		79AF7C391C89157B0026BEC0 /* HealthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AF7C381C89157B0026BEC0 /* HealthViewController.swift */; };
+		79AF7C3B1C89159B0026BEC0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AF7C3A1C89159A0026BEC0 /* SettingsViewController.swift */; };
+		79BFBC701CA8D68700141DDE /* IMFLoggerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFBC6F1CA8D68700141DDE /* IMFLoggerExtension.swift */; };
+		79BFBC721CA8D75B00141DDE /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BFBC711CA8D75B00141DDE /* Global.swift */; };
+		79C0CA6A1CAAA64A0093725C /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CA691CAAA64A0093725C /* QRCodeReaderViewController.swift */; };
+		79C0CA6C1CAABA1B0093725C /* AddApplianceViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CA6B1CAABA1B0093725C /* AddApplianceViewControler.swift */; };
+		79CCBA201CADD44100C74292 /* Appliances+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCBA1E1CADD44100C74292 /* Appliances+CoreDataProperties.swift */; };
+		79CCBA211CADD44100C74292 /* Appliances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CCBA1F1CADD44100C74292 /* Appliances.swift */; };
+		79D96A951C9F63B300B448E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D96A941C9F63B300B448E8 /* MainViewController.swift */; };
+		79D96AC21C9FC1DC00B448E8 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D96AC11C9FC1DC00B448E8 /* Login.storyboard */; };
+		79D96AC41C9FC1F300B448E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D96AC31C9FC1F300B448E8 /* LoginViewController.swift */; };
+		EE027D9E1C99AE36007F5D4A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE027D9D1C99AE36007F5D4A /* WelcomeViewController.swift */; };
+		EE027DA71C99B6F9007F5D4A /* ApplianceOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE027DA61C99B6F9007F5D4A /* ApplianceOverviewViewController.swift */; };
+		EE3D4F0B1C99E296001A4ECE /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3D4F0D1C99E296001A4ECE /* Walkthrough.storyboard */; };
+		EE3D4F0F1C99E607001A4ECE /* SwiperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D4F0E1C99E607001A4ECE /* SwiperViewController.swift */; };
+		EE3D4F111C99E635001A4ECE /* SwiperPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3D4F101C99E635001A4ECE /* SwiperPageViewController.swift */; };
+		EE9F72C91C972E5900F0CF60 /* AddAppliance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9F72C81C972E5900F0CF60 /* AddAppliance.storyboard */; };
+		EE9F72CD1C972EF600F0CF60 /* Energy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9F72CC1C972EF600F0CF60 /* Energy.storyboard */; };
+		EE9F72CF1C972F5000F0CF60 /* Health.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9F72CE1C972F5000F0CF60 /* Health.storyboard */; };
+		EE9F72D11C972FCB00F0CF60 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9F72D01C972FCB00F0CF60 /* Settings.storyboard */; };
+		EE9F72D61C984CB700F0CF60 /* AddApplianceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9F72D51C984CB700F0CF60 /* AddApplianceDetailViewController.swift */; };
+		EEAB2D201C998BA800A87C40 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAB2D1F1C998BA800A87C40 /* Status.storyboard */; };
+		EEAB2D221C998BBC00A87C40 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB2D211C998BBC00A87C40 /* StatusViewController.swift */; };
+		EEAB2D241C99925800A87C40 /* ApplianceOverview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEAB2D231C99925800A87C40 /* ApplianceOverview.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C136B531CA5D479005F507A /* ApplianceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplianceTableViewCell.swift; sourceTree = "<group>"; };
+		2AA166C0E6403886EAF1D636 /* libPods-IoT-Electronics-mobileApp-SWIFT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IoT-Electronics-mobileApp-SWIFT.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60149AA856BD13C0C54FFC24 /* Pods-IoT-Electronics-mobileApp-SWIFT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoT-Electronics-mobileApp-SWIFT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IoT-Electronics-mobileApp-SWIFT/Pods-IoT-Electronics-mobileApp-SWIFT.debug.xcconfig"; sourceTree = "<group>"; };
+		792B23571C89038800AF0117 /* IoT-Electronics-mobileApp-SWIFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IoT-Electronics-mobileApp-SWIFT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792B235A1C89038900AF0117 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		792B235F1C89038900AF0117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		792B23621C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IoT_Electronics_mobileApp_SWIFT.xcdatamodel; sourceTree = "<group>"; };
+		792B23641C89038900AF0117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		792B23671C89038900AF0117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		792B23691C89038900AF0117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7939BE4A1CAECEC100F89175 /* BluemixScan.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BluemixScan.storyboard; sourceTree = "<group>"; };
+		7939BE4C1CAED17F00F89175 /* BluemixConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluemixConfigViewController.swift; sourceTree = "<group>"; };
+		795914441CA1818900C0200B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7986810C1CA964540066412D /* MQTTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		799F3CD41CA8624700460810 /* CustomAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAuth.swift; sourceTree = "<group>"; };
+		79AF7C361C89156E0026BEC0 /* EnergyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnergyViewController.swift; sourceTree = "<group>"; };
+		79AF7C381C89157B0026BEC0 /* HealthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthViewController.swift; sourceTree = "<group>"; };
+		79AF7C3A1C89159A0026BEC0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		79BFBC6F1CA8D68700141DDE /* IMFLoggerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMFLoggerExtension.swift; sourceTree = "<group>"; };
+		79BFBC711CA8D75B00141DDE /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		79C0CA691CAAA64A0093725C /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		79C0CA6B1CAABA1B0093725C /* AddApplianceViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddApplianceViewControler.swift; sourceTree = "<group>"; };
+		79CCBA1E1CADD44100C74292 /* Appliances+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Appliances+CoreDataProperties.swift"; path = "IoT-Electronics-mobileApp-SWIFT/Appliances+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		79CCBA1F1CADD44100C74292 /* Appliances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appliances.swift; path = "IoT-Electronics-mobileApp-SWIFT/Appliances.swift"; sourceTree = "<group>"; };
+		79D96A941C9F63B300B448E8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		79D96A961C9F713E00B448E8 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		79D96AC11C9FC1DC00B448E8 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		79D96AC31C9FC1F300B448E8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		859D5907ABA5CD79ED8ED14B /* Pods-IoT-Electronics-mobileApp-SWIFT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IoT-Electronics-mobileApp-SWIFT.release.xcconfig"; path = "Pods/Target Support Files/Pods-IoT-Electronics-mobileApp-SWIFT/Pods-IoT-Electronics-mobileApp-SWIFT.release.xcconfig"; sourceTree = "<group>"; };
+		EE027D9D1C99AE36007F5D4A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		EE027DA61C99B6F9007F5D4A /* ApplianceOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplianceOverviewViewController.swift; sourceTree = "<group>"; };
+		EE3D4F0C1C99E296001A4ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Walkthrough.storyboard; sourceTree = "<group>"; };
+		EE3D4F0E1C99E607001A4ECE /* SwiperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperViewController.swift; sourceTree = "<group>"; };
+		EE3D4F101C99E635001A4ECE /* SwiperPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiperPageViewController.swift; sourceTree = "<group>"; };
+		EE9F72C81C972E5900F0CF60 /* AddAppliance.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddAppliance.storyboard; sourceTree = "<group>"; };
+		EE9F72CC1C972EF600F0CF60 /* Energy.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Energy.storyboard; sourceTree = "<group>"; };
+		EE9F72CE1C972F5000F0CF60 /* Health.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Health.storyboard; sourceTree = "<group>"; };
+		EE9F72D01C972FCB00F0CF60 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		EE9F72D51C984CB700F0CF60 /* AddApplianceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddApplianceDetailViewController.swift; sourceTree = "<group>"; };
+		EEAB2D1F1C998BA800A87C40 /* Status.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
+		EEAB2D211C998BBC00A87C40 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		EEAB2D231C99925800A87C40 /* ApplianceOverview.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ApplianceOverview.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		792B23541C89038800AF0117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639EE24988FE7371E57AAEF0 /* libPods-IoT-Electronics-mobileApp-SWIFT.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		213E4DD1801D057DFEA9BAAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60149AA856BD13C0C54FFC24 /* Pods-IoT-Electronics-mobileApp-SWIFT.debug.xcconfig */,
+				859D5907ABA5CD79ED8ED14B /* Pods-IoT-Electronics-mobileApp-SWIFT.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75DF575E22452BB1EF0C339F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AA166C0E6403886EAF1D636 /* libPods-IoT-Electronics-mobileApp-SWIFT.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		792B234E1C89038800AF0117 = {
+			isa = PBXGroup;
+			children = (
+				792B23591C89038900AF0117 /* IoT-Electronics-mobileApp-SWIFT */,
+				792B23581C89038800AF0117 /* Products */,
+				213E4DD1801D057DFEA9BAAD /* Pods */,
+				75DF575E22452BB1EF0C339F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		792B23581C89038800AF0117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				792B23571C89038800AF0117 /* IoT-Electronics-mobileApp-SWIFT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		792B23591C89038900AF0117 /* IoT-Electronics-mobileApp-SWIFT */ = {
+			isa = PBXGroup;
+			children = (
+				792B235A1C89038900AF0117 /* AppDelegate.swift */,
+				7939BE4A1CAECEC100F89175 /* BluemixScan.storyboard */,
+				7939BE4C1CAED17F00F89175 /* BluemixConfigViewController.swift */,
+				7986810C1CA964540066412D /* MQTTManager.swift */,
+				79CCBA221CADD44900C74292 /* core data */,
+				EE9F72D21C97386700F0CF60 /* walkthrough */,
+				79AF7C2B1C8914540026BEC0 /* addAppliance */,
+				EEAB2D1D1C998AB600A87C40 /* applianceOverview */,
+				792B23641C89038900AF0117 /* Assets.xcassets */,
+				792B235E1C89038900AF0117 /* Main.storyboard */,
+				79D96A941C9F63B300B448E8 /* MainViewController.swift */,
+				795914441CA1818900C0200B /* API.swift */,
+				792B23661C89038900AF0117 /* LaunchScreen.storyboard */,
+				79D96A961C9F713E00B448E8 /* BridgingHeader.h */,
+				792B23691C89038900AF0117 /* Info.plist */,
+				792B23611C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodeld */,
+				799F3CD61CA8625600460810 /* authentication */,
+				799F3CD91CA8634800460810 /* SwiftExtensions */,
+				79BFBC711CA8D75B00141DDE /* Global.swift */,
+			);
+			path = "IoT-Electronics-mobileApp-SWIFT";
+			sourceTree = "<group>";
+		};
+		799F3CD61CA8625600460810 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				79D96AC11C9FC1DC00B448E8 /* Login.storyboard */,
+				79D96AC31C9FC1F300B448E8 /* LoginViewController.swift */,
+				799F3CD41CA8624700460810 /* CustomAuth.swift */,
+			);
+			name = authentication;
+			sourceTree = "<group>";
+		};
+		799F3CD91CA8634800460810 /* SwiftExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				79BFBC6F1CA8D68700141DDE /* IMFLoggerExtension.swift */,
+			);
+			name = SwiftExtensions;
+			sourceTree = "<group>";
+		};
+		79AF7C2B1C8914540026BEC0 /* addAppliance */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F72C81C972E5900F0CF60 /* AddAppliance.storyboard */,
+				79C0CA6B1CAABA1B0093725C /* AddApplianceViewControler.swift */,
+				EE9F72D51C984CB700F0CF60 /* AddApplianceDetailViewController.swift */,
+				79C0CA691CAAA64A0093725C /* QRCodeReaderViewController.swift */,
+			);
+			name = addAppliance;
+			sourceTree = "<group>";
+		};
+		79AF7C3C1C8915A20026BEC0 /* energy */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F72CC1C972EF600F0CF60 /* Energy.storyboard */,
+				79AF7C361C89156E0026BEC0 /* EnergyViewController.swift */,
+			);
+			name = energy;
+			sourceTree = "<group>";
+		};
+		79AF7C3D1C8915AE0026BEC0 /* health */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F72CE1C972F5000F0CF60 /* Health.storyboard */,
+				79AF7C381C89157B0026BEC0 /* HealthViewController.swift */,
+			);
+			name = health;
+			sourceTree = "<group>";
+		};
+		79AF7C3E1C8915B90026BEC0 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				EE9F72D01C972FCB00F0CF60 /* Settings.storyboard */,
+				79AF7C3A1C89159A0026BEC0 /* SettingsViewController.swift */,
+			);
+			name = settings;
+			sourceTree = "<group>";
+		};
+		79CCBA221CADD44900C74292 /* core data */ = {
+			isa = PBXGroup;
+			children = (
+				79CCBA1E1CADD44100C74292 /* Appliances+CoreDataProperties.swift */,
+				79CCBA1F1CADD44100C74292 /* Appliances.swift */,
+			);
+			name = "core data";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EE9F72D21C97386700F0CF60 /* walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				EE3D4F0D1C99E296001A4ECE /* Walkthrough.storyboard */,
+				EE027D9D1C99AE36007F5D4A /* WelcomeViewController.swift */,
+				EE3D4F0E1C99E607001A4ECE /* SwiperViewController.swift */,
+				EE3D4F101C99E635001A4ECE /* SwiperPageViewController.swift */,
+			);
+			name = walkthrough;
+			sourceTree = "<group>";
+		};
+		EEAB2D1D1C998AB600A87C40 /* applianceOverview */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB2D1E1C998AED00A87C40 /* status */,
+				79AF7C3C1C8915A20026BEC0 /* energy */,
+				79AF7C3D1C8915AE0026BEC0 /* health */,
+				79AF7C3E1C8915B90026BEC0 /* settings */,
+				EEAB2D231C99925800A87C40 /* ApplianceOverview.storyboard */,
+				EE027DA61C99B6F9007F5D4A /* ApplianceOverviewViewController.swift */,
+				0C136B531CA5D479005F507A /* ApplianceTableViewCell.swift */,
+			);
+			name = applianceOverview;
+			sourceTree = "<group>";
+		};
+		EEAB2D1E1C998AED00A87C40 /* status */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB2D1F1C998BA800A87C40 /* Status.storyboard */,
+				EEAB2D211C998BBC00A87C40 /* StatusViewController.swift */,
+			);
+			name = status;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		792B23561C89038800AF0117 /* IoT-Electronics-mobileApp-SWIFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 792B236C1C89038900AF0117 /* Build configuration list for PBXNativeTarget "IoT-Electronics-mobileApp-SWIFT" */;
+			buildPhases = (
+				F79D0369A703546B61DC99A8 /* Check Pods Manifest.lock */,
+				792B23531C89038800AF0117 /* Sources */,
+				792B23541C89038800AF0117 /* Frameworks */,
+				792B23551C89038800AF0117 /* Resources */,
+				420960E02197443EEA472B94 /* Embed Pods Frameworks */,
+				874E3AD8989299ACC3965B11 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IoT-Electronics-mobileApp-SWIFT";
+			productName = "IoT-Electronics-mobileApp-SWIFT";
+			productReference = 792B23571C89038800AF0117 /* IoT-Electronics-mobileApp-SWIFT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		792B234F1C89038800AF0117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = IBM;
+				TargetAttributes = {
+					792B23561C89038800AF0117 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = PETKK2G752;
+					};
+				};
+			};
+			buildConfigurationList = 792B23521C89038800AF0117 /* Build configuration list for PBXProject "IoT-Electronics-mobileApp-SWIFT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 792B234E1C89038800AF0117;
+			productRefGroup = 792B23581C89038800AF0117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				792B23561C89038800AF0117 /* IoT-Electronics-mobileApp-SWIFT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		792B23551C89038800AF0117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7939BE4B1CAECEC100F89175 /* BluemixScan.storyboard in Resources */,
+				EE9F72C91C972E5900F0CF60 /* AddAppliance.storyboard in Resources */,
+				792B23681C89038900AF0117 /* LaunchScreen.storyboard in Resources */,
+				EEAB2D241C99925800A87C40 /* ApplianceOverview.storyboard in Resources */,
+				792B23651C89038900AF0117 /* Assets.xcassets in Resources */,
+				EE9F72CD1C972EF600F0CF60 /* Energy.storyboard in Resources */,
+				EE9F72CF1C972F5000F0CF60 /* Health.storyboard in Resources */,
+				EEAB2D201C998BA800A87C40 /* Status.storyboard in Resources */,
+				79D96AC21C9FC1DC00B448E8 /* Login.storyboard in Resources */,
+				EE3D4F0B1C99E296001A4ECE /* Walkthrough.storyboard in Resources */,
+				792B23601C89038900AF0117 /* Main.storyboard in Resources */,
+				EE9F72D11C972FCB00F0CF60 /* Settings.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		420960E02197443EEA472B94 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IoT-Electronics-mobileApp-SWIFT/Pods-IoT-Electronics-mobileApp-SWIFT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		874E3AD8989299ACC3965B11 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IoT-Electronics-mobileApp-SWIFT/Pods-IoT-Electronics-mobileApp-SWIFT-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F79D0369A703546B61DC99A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		792B23531C89038800AF0117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C0CA6A1CAAA64A0093725C /* QRCodeReaderViewController.swift in Sources */,
+				EE3D4F0F1C99E607001A4ECE /* SwiperViewController.swift in Sources */,
+				79D96AC41C9FC1F300B448E8 /* LoginViewController.swift in Sources */,
+				79C0CA6C1CAABA1B0093725C /* AddApplianceViewControler.swift in Sources */,
+				79BFBC701CA8D68700141DDE /* IMFLoggerExtension.swift in Sources */,
+				792B235B1C89038900AF0117 /* AppDelegate.swift in Sources */,
+				EE027DA71C99B6F9007F5D4A /* ApplianceOverviewViewController.swift in Sources */,
+				EE3D4F111C99E635001A4ECE /* SwiperPageViewController.swift in Sources */,
+				79AF7C391C89157B0026BEC0 /* HealthViewController.swift in Sources */,
+				EEAB2D221C998BBC00A87C40 /* StatusViewController.swift in Sources */,
+				79CCBA201CADD44100C74292 /* Appliances+CoreDataProperties.swift in Sources */,
+				79CCBA211CADD44100C74292 /* Appliances.swift in Sources */,
+				7986810D1CA964540066412D /* MQTTManager.swift in Sources */,
+				792B23631C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodeld in Sources */,
+				79AF7C371C89156E0026BEC0 /* EnergyViewController.swift in Sources */,
+				795914451CA1818900C0200B /* API.swift in Sources */,
+				7939BE4D1CAED17F00F89175 /* BluemixConfigViewController.swift in Sources */,
+				0C136B541CA5D479005F507A /* ApplianceTableViewCell.swift in Sources */,
+				79AF7C3B1C89159B0026BEC0 /* SettingsViewController.swift in Sources */,
+				EE027D9E1C99AE36007F5D4A /* WelcomeViewController.swift in Sources */,
+				EE9F72D61C984CB700F0CF60 /* AddApplianceDetailViewController.swift in Sources */,
+				799F3CD51CA8624700460810 /* CustomAuth.swift in Sources */,
+				79D96A951C9F63B300B448E8 /* MainViewController.swift in Sources */,
+				79BFBC721CA8D75B00141DDE /* Global.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		792B235E1C89038900AF0117 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792B235F1C89038900AF0117 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		792B23661C89038900AF0117 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				792B23671C89038900AF0117 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EE3D4F0D1C99E296001A4ECE /* Walkthrough.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3D4F0C1C99E296001A4ECE /* Base */,
+			);
+			name = Walkthrough.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		792B236A1C89038900AF0117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		792B236B1C89038900AF0117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		792B236D1C89038900AF0117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60149AA856BD13C0C54FFC24 /* Pods-IoT-Electronics-mobileApp-SWIFT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "IoT-Electronics-mobileApp-SWIFT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.iot.electronics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IoT-Electronics-mobileApp-SWIFT/BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		792B236E1C89038900AF0117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 859D5907ABA5CD79ED8ED14B /* Pods-IoT-Electronics-mobileApp-SWIFT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "IoT-Electronics-mobileApp-SWIFT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.iot.electronics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/IoT-Electronics-mobileApp-SWIFT/BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		792B23521C89038800AF0117 /* Build configuration list for PBXProject "IoT-Electronics-mobileApp-SWIFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792B236A1C89038900AF0117 /* Debug */,
+				792B236B1C89038900AF0117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792B236C1C89038900AF0117 /* Build configuration list for PBXNativeTarget "IoT-Electronics-mobileApp-SWIFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				792B236D1C89038900AF0117 /* Debug */,
+				792B236E1C89038900AF0117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		792B23611C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				792B23621C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodel */,
+			);
+			currentVersion = 792B23621C89038900AF0117 /* IoT_Electronics_mobileApp_SWIFT.xcdatamodel */;
+			path = IoT_Electronics_mobileApp_SWIFT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 792B234F1C89038800AF0117 /* Project object */;
+}

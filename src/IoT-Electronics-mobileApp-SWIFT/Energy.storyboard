@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gab-7v-eJw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Energy-->
+        <scene sceneID="3i2-vf-reO">
+            <objects>
+                <viewController title="Energy" id="gab-7v-eJw" customClass="EnergyViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="skt-Dp-eJQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tlq-08-A3A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUb-3f-ULg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy tips:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frL-Lo-sfG">
+                                <rect key="frame" x="29" y="28" width="361" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="iBO-4N-xf1">
+                                <rect key="frame" x="24" y="69" width="366" height="610"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="frL-Lo-sfG" firstAttribute="top" secondItem="skt-Dp-eJQ" secondAttribute="bottom" constant="8" symbolic="YES" id="68l-xE-l9F"/>
+                            <constraint firstItem="frL-Lo-sfG" firstAttribute="leading" secondItem="uUb-3f-ULg" secondAttribute="leadingMargin" constant="5" id="KZb-nH-iAP"/>
+                            <constraint firstItem="iBO-4N-xf1" firstAttribute="centerX" secondItem="uUb-3f-ULg" secondAttribute="centerX" id="eh7-gt-csq"/>
+                            <constraint firstItem="frL-Lo-sfG" firstAttribute="leading" secondItem="uUb-3f-ULg" secondAttribute="leadingMargin" constant="9" id="gIr-8F-VCn"/>
+                            <constraint firstItem="frL-Lo-sfG" firstAttribute="trailing" secondItem="iBO-4N-xf1" secondAttribute="trailing" id="k4k-kW-etx"/>
+                            <constraint firstItem="Tlq-08-A3A" firstAttribute="top" secondItem="iBO-4N-xf1" secondAttribute="bottom" constant="8" symbolic="YES" id="sWE-9B-e1w"/>
+                            <constraint firstItem="iBO-4N-xf1" firstAttribute="top" secondItem="frL-Lo-sfG" secondAttribute="bottom" constant="20" id="uKS-8o-KC0"/>
+                            <constraint firstItem="iBO-4N-xf1" firstAttribute="leading" secondItem="uUb-3f-ULg" secondAttribute="leadingMargin" constant="4" id="zIK-31-yrM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="KZb-nH-iAP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Energy" image="energy" id="zYw-pc-5pR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="energyText" destination="iBO-4N-xf1" id="JqC-Ed-jb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Neq-pT-gbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="374.5" y="439.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="energy" width="16" height="28"/>
+    </resources>
+</document>

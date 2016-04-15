@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w1Q-Df-gY8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Health-->
+        <scene sceneID="Lqw-o2-mfc">
+            <objects>
+                <viewController id="w1Q-Df-gY8" customClass="HealthViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="teN-4f-Unf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uq9-8u-LaO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fFP-n8-cJh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO PROBLEMS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3j-gJ-Suv">
+                                <rect key="frame" x="0.0" y="441" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wJJ-Q0-94E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your washing machine is in geat shape. Keep it up!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8YL-9A-WCE">
+                                <rect key="frame" x="0.0" y="470" width="375" height="140"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="ODn-2C-7A1"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Health_appliance_diagnostics_Good" translatesAutoresizingMaskIntoConstraints="NO" id="Px6-a1-pr6">
+                                <rect key="frame" x="0.0" y="67" width="375" height="360"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGa-sk-mlT">
+                                <rect key="frame" x="0.0" y="237" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="I3u-qd-3td"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I3u-qd-3td"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Px6-a1-pr6" firstAttribute="trailing" secondItem="DGa-sk-mlT" secondAttribute="trailing" id="12f-m9-2Hi"/>
+                            <constraint firstAttribute="trailing" secondItem="8YL-9A-WCE" secondAttribute="trailing" id="4dA-yJ-bHe"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3j-gJ-Suv" secondAttribute="trailing" id="CE6-gc-fQx"/>
+                            <constraint firstItem="Px6-a1-pr6" firstAttribute="leading" secondItem="DGa-sk-mlT" secondAttribute="leading" id="CmX-1p-no8"/>
+                            <constraint firstItem="DGa-sk-mlT" firstAttribute="centerX" secondItem="Q3j-gJ-Suv" secondAttribute="centerX" id="MUw-cb-ZBn"/>
+                            <constraint firstItem="Uq9-8u-LaO" firstAttribute="top" secondItem="8YL-9A-WCE" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgx-js-G7g"/>
+                            <constraint firstItem="8YL-9A-WCE" firstAttribute="leading" secondItem="fFP-n8-cJh" secondAttribute="leading" id="Qht-9L-Jhj"/>
+                            <constraint firstItem="Q3j-gJ-Suv" firstAttribute="leading" secondItem="fFP-n8-cJh" secondAttribute="leading" id="doX-N0-de5"/>
+                            <constraint firstAttribute="trailing" secondItem="DGa-sk-mlT" secondAttribute="trailing" id="gKc-ff-0Bc"/>
+                            <constraint firstItem="Px6-a1-pr6" firstAttribute="centerY" secondItem="DGa-sk-mlT" secondAttribute="centerY" id="ofU-5t-Hxa"/>
+                            <constraint firstItem="DGa-sk-mlT" firstAttribute="leading" secondItem="fFP-n8-cJh" secondAttribute="leading" id="vDy-8X-5lL"/>
+                            <constraint firstItem="Q3j-gJ-Suv" firstAttribute="top" secondItem="Px6-a1-pr6" secondAttribute="bottom" constant="14" id="vQz-eV-iAL"/>
+                            <constraint firstItem="8YL-9A-WCE" firstAttribute="top" secondItem="Q3j-gJ-Suv" secondAttribute="bottom" constant="8" symbolic="YES" id="wZ4-pG-wXp"/>
+                            <constraint firstItem="Px6-a1-pr6" firstAttribute="top" secondItem="teN-4f-Unf" secondAttribute="bottom" constant="47" id="zje-mN-iEL"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Health" image="health" id="A2f-aq-MT5"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageHealth" destination="Px6-a1-pr6" id="f5D-cR-Mnb"/>
+                        <outlet property="labelProblems" destination="Q3j-gJ-Suv" id="N4b-jl-IeJ"/>
+                        <outlet property="labelStatus" destination="DGa-sk-mlT" id="6mx-1P-EdA"/>
+                        <outlet property="textDetail" destination="8YL-9A-WCE" id="fzH-wU-cc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ytf-ou-qW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="850"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Health_appliance_diagnostics_Good" width="356" height="347"/>
+        <image name="health" width="26" height="25"/>
+    </resources>
+</document>

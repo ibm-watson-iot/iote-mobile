@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kxh-53-wfh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="G0a-mu-XeZ">
+            <objects>
+                <viewController id="ivi-NV-VRC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4pr-oL-fqo"/>
+                        <viewControllerLayoutGuide type="bottom" id="7BG-WC-chN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="06e-NJ-cyN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCd-PH-032">
+                                <rect key="frame" x="134" y="576" width="107" height="30"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <segue destination="kxh-53-wfh" kind="show" id="gCN-lh-Dd1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This will be the Walkthrough" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="none" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="H0d-IP-N2f">
+                                <rect key="frame" x="79" y="161" width="216" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BCd-PH-032" secondAttribute="trailing" constant="114" id="9pO-f6-RgR"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="centerY" secondItem="06e-NJ-cyN" secondAttribute="centerY" multiplier="4:3" priority="750" constant="-274" id="OWP-3y-Zhn"/>
+                            <constraint firstItem="BCd-PH-032" firstAttribute="centerX" secondItem="06e-NJ-cyN" secondAttribute="centerX" id="U5d-Ad-GYt"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="centerX" secondItem="06e-NJ-cyN" secondAttribute="centerX" id="Vtd-ZA-gLg"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="top" secondItem="4pr-oL-fqo" secondAttribute="bottom" constant="140.5" id="aJe-Ty-tV2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H0d-IP-N2f" secondAttribute="trailing" constant="60" id="bKI-wg-gOI"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="centerX" secondItem="06e-NJ-cyN" secondAttribute="centerX" id="iN9-bM-MlD"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="centerY" secondItem="06e-NJ-cyN" secondAttribute="centerY" multiplier="16:9" constant="1" id="jiE-QI-xSC"/>
+                            <constraint firstItem="H0d-IP-N2f" firstAttribute="leading" secondItem="06e-NJ-cyN" secondAttribute="leadingMargin" constant="59" id="ojC-dM-mJf"/>
+                            <constraint firstItem="BCd-PH-032" firstAttribute="centerY" secondItem="06e-NJ-cyN" secondAttribute="centerY" multiplier="16:9" id="wio-Es-D8x"/>
+                            <constraint firstItem="BCd-PH-032" firstAttribute="leading" secondItem="06e-NJ-cyN" secondAttribute="leadingMargin" constant="114" id="wl6-sX-Mpd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="OWP-3y-Zhn"/>
+                                <exclude reference="Vtd-ZA-gLg"/>
+                                <exclude reference="iN9-bM-MlD"/>
+                                <exclude reference="jiE-QI-xSC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4I-jp-7xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404.5" y="6.5"/>
+        </scene>
+        <!--Swiper View Controller-->
+        <scene sceneID="Z0N-0Q-qO3">
+            <objects>
+                <viewController id="kxh-53-wfh" customClass="SwiperViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JfG-xU-iXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="juY-X5-L36"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vxN-CR-F18">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3b9-ah-yHb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <connections>
+                                    <segue destination="YMu-8y-c79" kind="embed" id="zy0-f7-RrF"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="ibz-mE-XLW">
+                                <rect key="frame" x="168" y="450" width="39" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="8dl-Ie-oW2"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3b9-ah-yHb" firstAttribute="bottom" secondItem="juY-X5-L36" secondAttribute="top" id="B0U-cr-tXD"/>
+                            <constraint firstItem="ibz-mE-XLW" firstAttribute="centerY" secondItem="vxN-CR-F18" secondAttribute="centerY" constant="135" id="CHN-Zb-fEo" userLabel="Page Control.centerY = centerY + 120"/>
+                            <constraint firstItem="3b9-ah-yHb" firstAttribute="top" secondItem="JfG-xU-iXh" secondAttribute="bottom" id="HPy-1L-vcK"/>
+                            <constraint firstItem="ibz-mE-XLW" firstAttribute="centerX" secondItem="3b9-ah-yHb" secondAttribute="centerX" id="PPa-ki-m3u"/>
+                            <constraint firstItem="3b9-ah-yHb" firstAttribute="leading" secondItem="vxN-CR-F18" secondAttribute="leading" id="otj-PX-9GS"/>
+                            <constraint firstItem="3b9-ah-yHb" firstAttribute="trailing" secondItem="vxN-CR-F18" secondAttribute="trailing" id="qtn-6i-n51"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="containerView" destination="3b9-ah-yHb" id="8ML-p1-8ZH"/>
+                        <outlet property="pageControl" destination="ibz-mE-XLW" id="F9h-W5-Vru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AM5-aq-PEg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404.5" y="890.5"/>
+        </scene>
+        <!--Swiper Page View Controller-->
+        <scene sceneID="Acq-dr-Tj0">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="YMu-8y-c79" customClass="SwiperPageViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BA-eq-Cw4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1270.5" y="890.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iYJ-aq-EJM">
+            <objects>
+                <viewController storyboardIdentifier="OneViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kaK-4p-cCq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="loV-TY-xz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="33z-jN-Awz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bkZ-ht-dAb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="031-WT-controls" translatesAutoresizingMaskIntoConstraints="NO" id="ljy-Yg-aYF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Control your new smart appliance from your phone easily. Anywhere. Anytime." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad8-dM-y4h">
+                                <rect key="frame" x="38" y="506.5" width="299" height="90.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ad8-dM-y4h" secondAttribute="height" multiplier="76:23" id="fI0-GJ-Ur5"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ljy-Yg-aYF" firstAttribute="leading" secondItem="bkZ-ht-dAb" secondAttribute="leading" id="33d-pr-uBq"/>
+                            <constraint firstItem="ljy-Yg-aYF" firstAttribute="trailing" secondItem="bkZ-ht-dAb" secondAttribute="trailing" id="Pzk-bD-IAR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ad8-dM-y4h" secondAttribute="trailing" constant="22" id="SRn-0x-2sP" userLabel="trailingMargin = Text View.trailing + 26"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ad8-dM-y4h" secondAttribute="leading" constant="-22" id="WXt-oH-2NH" userLabel="leadingMargin = Text View.leading - 26"/>
+                            <constraint firstItem="ljy-Yg-aYF" firstAttribute="bottom" secondItem="bkZ-ht-dAb" secondAttribute="bottom" id="aqM-G6-87A"/>
+                            <constraint firstItem="Ad8-dM-y4h" firstAttribute="bottom" secondItem="33z-jN-Awz" secondAttribute="top" constant="-70" id="mtV-M2-Zcn"/>
+                            <constraint firstItem="ljy-Yg-aYF" firstAttribute="top" secondItem="bkZ-ht-dAb" secondAttribute="top" id="sOK-QX-rFu"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEQ-CG-Vhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370.5" y="1694.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="udb-5R-PLL">
+            <objects>
+                <viewController storyboardIdentifier="TwoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="akN-6o-mYS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dkg-iD-LBD"/>
+                        <viewControllerLayoutGuide type="bottom" id="LlH-KB-AMG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AKX-ar-um1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="032-WT-trackCycle" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-dv-GQs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Stop and start your machine remotely." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wt2-fu-Fxg">
+                                <rect key="frame" x="42" y="426.5" width="236" height="71.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wt2-fu-Fxg" secondAttribute="height" multiplier="76:23" id="2RY-Nd-Og1"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="W5F-dv-GQs" firstAttribute="bottom" secondItem="AKX-ar-um1" secondAttribute="bottom" id="06l-s9-gTV"/>
+                            <constraint firstItem="wt2-fu-Fxg" firstAttribute="trailing" secondItem="AKX-ar-um1" secondAttribute="trailingMargin" constant="-26" id="4WW-5F-M5Z"/>
+                            <constraint firstItem="W5F-dv-GQs" firstAttribute="top" secondItem="AKX-ar-um1" secondAttribute="top" id="RYS-jK-n7b"/>
+                            <constraint firstItem="W5F-dv-GQs" firstAttribute="trailing" secondItem="AKX-ar-um1" secondAttribute="trailing" id="Why-po-yGv"/>
+                            <constraint firstItem="wt2-fu-Fxg" firstAttribute="leading" secondItem="AKX-ar-um1" secondAttribute="leadingMargin" constant="26" id="vCv-dF-LjC"/>
+                            <constraint firstItem="W5F-dv-GQs" firstAttribute="leading" secondItem="AKX-ar-um1" secondAttribute="leading" id="xIn-yg-gb2"/>
+                            <constraint firstItem="wt2-fu-Fxg" firstAttribute="bottom" secondItem="LlH-KB-AMG" secondAttribute="top" constant="-70" id="z5Z-ga-Ytb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjH-01-RVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819.5" y="1694.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r1Q-in-DgK">
+            <objects>
+                <viewController storyboardIdentifier="ThreeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lB6-pG-pkR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XV2-ir-5f5"/>
+                        <viewControllerLayoutGuide type="bottom" id="KPa-hg-TYl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="li5-2u-OVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="033-WT-alerts" translatesAutoresizingMaskIntoConstraints="NO" id="mDN-E9-UPm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Track what part of the cycle your machine is on." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86M-nE-0Or">
+                                <rect key="frame" x="39" y="425" width="241" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="86M-nE-0Or" secondAttribute="height" multiplier="76:23" id="hry-j5-CXD"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="86M-nE-0Or" firstAttribute="bottom" secondItem="KPa-hg-TYl" secondAttribute="top" constant="-70" id="C0Z-U8-C3S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="86M-nE-0Or" secondAttribute="trailing" constant="24" id="JrQ-Ks-727" userLabel="trailingMargin = Text View.trailing + 26"/>
+                            <constraint firstItem="mDN-E9-UPm" firstAttribute="leading" secondItem="li5-2u-OVl" secondAttribute="leading" id="Rz5-cC-3BQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="86M-nE-0Or" secondAttribute="leading" constant="-23" id="Vdf-re-A7c" userLabel="leadingMargin = Text View.leading - 26"/>
+                            <constraint firstItem="mDN-E9-UPm" firstAttribute="trailing" secondItem="li5-2u-OVl" secondAttribute="trailing" id="eqI-w1-wjh"/>
+                            <constraint firstItem="mDN-E9-UPm" firstAttribute="top" secondItem="li5-2u-OVl" secondAttribute="top" id="qy4-eQ-end"/>
+                            <constraint firstItem="mDN-E9-UPm" firstAttribute="bottom" secondItem="li5-2u-OVl" secondAttribute="bottom" id="sae-Z8-UxI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1i-QO-1aA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267.5" y="1694.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NSs-Xc-Cyf">
+            <objects>
+                <viewController storyboardIdentifier="FourViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m3i-zP-KVr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oDn-ga-vzg"/>
+                        <viewControllerLayoutGuide type="bottom" id="vHb-rX-YQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="pjJ-Tl-Qel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="034-WT-stats" translatesAutoresizingMaskIntoConstraints="NO" id="r2l-2i-gk3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="If there is a problem with your machine, see what it is and how to fix it." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4r-nX-VlR">
+                                <rect key="frame" x="38" y="506.5" width="299" height="90.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L4r-nX-VlR" secondAttribute="height" multiplier="76:23" id="5im-pQ-gFj"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="L4r-nX-VlR" firstAttribute="leading" secondItem="pjJ-Tl-Qel" secondAttribute="leadingMargin" constant="22" id="506-XK-i7i" userLabel="Text View.leading = leadingMargin + 26"/>
+                            <constraint firstItem="L4r-nX-VlR" firstAttribute="trailing" secondItem="pjJ-Tl-Qel" secondAttribute="trailingMargin" constant="-22" id="69Z-SW-DL3" userLabel="Text View.trailing = trailingMargin - 26"/>
+                            <constraint firstItem="r2l-2i-gk3" firstAttribute="leading" secondItem="pjJ-Tl-Qel" secondAttribute="leading" id="McX-MS-dQZ"/>
+                            <constraint firstItem="r2l-2i-gk3" firstAttribute="bottom" secondItem="pjJ-Tl-Qel" secondAttribute="bottom" id="VEi-vn-YZS"/>
+                            <constraint firstItem="r2l-2i-gk3" firstAttribute="trailing" secondItem="pjJ-Tl-Qel" secondAttribute="trailing" id="fKQ-zc-SJW"/>
+                            <constraint firstItem="L4r-nX-VlR" firstAttribute="bottom" secondItem="vHb-rX-YQa" secondAttribute="top" constant="-70" id="m24-cM-6my"/>
+                            <constraint firstItem="r2l-2i-gk3" firstAttribute="top" secondItem="pjJ-Tl-Qel" secondAttribute="top" id="tLA-ZK-HXD"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qcg-37-bUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716.5" y="1694.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RuM-8r-KV3">
+            <objects>
+                <viewController storyboardIdentifier="FiveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bIE-eH-Jc3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HNt-W8-brC"/>
+                        <viewControllerLayoutGuide type="bottom" id="WVS-pY-iJR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IUb-eJ-zMG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="035-WT-selfDiagnostic" translatesAutoresizingMaskIntoConstraints="NO" id="imR-Au-67T">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6f-Mk-Kc2">
+                                <rect key="frame" x="16" y="508" width="288" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Try it out"/>
+                                <connections>
+                                    <segue destination="mHl-aC-725" kind="show" id="JZ5-wd-WIZ">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="See if your machine is in good shape." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2f-eZ-Vpo">
+                                <rect key="frame" x="38" y="426" width="244" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n2f-eZ-Vpo" secondAttribute="height" multiplier="76:23" id="Lht-O2-yrU"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="imR-Au-67T" firstAttribute="trailing" secondItem="IUb-eJ-zMG" secondAttribute="trailing" id="18S-T6-D9M"/>
+                            <constraint firstItem="E6f-Mk-Kc2" firstAttribute="leading" secondItem="IUb-eJ-zMG" secondAttribute="leadingMargin" id="Dgm-Tq-on2"/>
+                            <constraint firstItem="n2f-eZ-Vpo" firstAttribute="leading" secondItem="IUb-eJ-zMG" secondAttribute="leadingMargin" constant="22" id="FQC-v8-3vd" userLabel="Text View.leading = leadingMargin + 26"/>
+                            <constraint firstItem="n2f-eZ-Vpo" firstAttribute="bottom" secondItem="WVS-pY-iJR" secondAttribute="top" constant="-70" id="LxC-P3-vbf"/>
+                            <constraint firstItem="E6f-Mk-Kc2" firstAttribute="top" secondItem="n2f-eZ-Vpo" secondAttribute="bottom" constant="10" id="NRY-fg-TL1"/>
+                            <constraint firstItem="n2f-eZ-Vpo" firstAttribute="trailing" secondItem="IUb-eJ-zMG" secondAttribute="trailingMargin" constant="-22" id="Wyx-TV-JBJ" userLabel="Text View.trailing = trailingMargin - 26"/>
+                            <constraint firstItem="imR-Au-67T" firstAttribute="bottom" secondItem="IUb-eJ-zMG" secondAttribute="bottom" id="i7H-PY-2bK"/>
+                            <constraint firstItem="E6f-Mk-Kc2" firstAttribute="trailing" secondItem="IUb-eJ-zMG" secondAttribute="trailingMargin" id="izN-M4-FQO"/>
+                            <constraint firstItem="imR-Au-67T" firstAttribute="leading" secondItem="IUb-eJ-zMG" secondAttribute="leading" id="ne0-8N-0XI"/>
+                            <constraint firstItem="imR-Au-67T" firstAttribute="top" secondItem="IUb-eJ-zMG" secondAttribute="top" id="t06-T3-1fq"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ksp-uZ-veW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.5" y="1693.5"/>
+        </scene>
+        <!--BluemixScan-->
+        <scene sceneID="nT5-aF-CSM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BluemixScan" id="mHl-aC-725" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yab-cF-wfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2528" y="1958"/>
+        </scene>
+        <!--AddAppliance-->
+        <scene sceneID="mE7-Re-lZa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddAppliance" id="f2l-9Q-fB0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfx-2i-eul" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="588"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="031-WT-controls" width="414" height="735"/>
+        <image name="032-WT-trackCycle" width="414" height="735"/>
+        <image name="033-WT-alerts" width="414" height="735"/>
+        <image name="034-WT-stats" width="414" height="735"/>
+        <image name="035-WT-selfDiagnostic" width="414" height="735"/>
+    </resources>
+</document>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="Appliances" representedClassName=".Appliances" syncable="YES">
+        <attribute name="currentCycle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="doorOpen" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="failureType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="program" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="topic" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Appliances" positionX="-54" positionY="-9" width="128" height="180"/>
+    </elements>
+</model>

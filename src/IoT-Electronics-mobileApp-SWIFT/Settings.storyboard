@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b6c-z1-oJh">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="mBF-Lm-Uiu">
+            <objects>
+                <viewController id="b6c-z1-oJh" customClass="AccountViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iqq-v0-fxI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kaR-Py-Erw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CZX-y5-Egk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_settings" translatesAutoresizingMaskIntoConstraints="NO" id="NbC-7J-zPD">
+                                <rect key="frame" x="0.0" y="20" width="414" height="766"/>
+                                <color key="backgroundColor" red="0.72709517045454541" green="0.72709517045454541" blue="0.72709517045454541" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL0-K7-Gm0">
+                                <rect key="frame" x="0.0" y="473" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.49803921569999998" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete Appliance">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteApplianceAction:" destination="b6c-z1-oJh" eventType="touchUpInside" id="OIw-v0-ubZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kaR-Py-Erw" firstAttribute="top" secondItem="hL0-K7-Gm0" secondAttribute="bottom" constant="338" id="3wJ-Pu-jem"/>
+                            <constraint firstItem="hL0-K7-Gm0" firstAttribute="leading" secondItem="CZX-y5-Egk" secondAttribute="leading" id="DHi-vd-NZg"/>
+                            <constraint firstAttribute="trailing" secondItem="hL0-K7-Gm0" secondAttribute="trailing" id="KI1-wT-sWo"/>
+                            <constraint firstItem="kaR-Py-Erw" firstAttribute="top" secondItem="hL0-K7-Gm0" secondAttribute="bottom" constant="184" id="Raz-KZ-PEN"/>
+                            <constraint firstItem="hL0-K7-Gm0" firstAttribute="leading" secondItem="NbC-7J-zPD" secondAttribute="leading" id="V1L-cn-EyW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="NbC-7J-zPD" secondAttribute="bottom" constant="-50" id="ekn-8k-o82"/>
+                            <constraint firstItem="NbC-7J-zPD" firstAttribute="top" secondItem="iqq-v0-fxI" secondAttribute="bottom" id="vxv-21-yS2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3wJ-Pu-jem"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Sls-Et-rkI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4V7-J6-oMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="891"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dummy_settings" width="414" height="605"/>
+        <image name="settings" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aKe-Mb-VuE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect to IoT for Electronics config-->
+        <scene sceneID="lnO-ZX-jpU">
+            <objects>
+                <viewController title="Connect to IoT for Electronics config" id="V38-7f-FuV" customClass="BluemixConfigViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k8x-Mz-hwK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yvd-Rn-1mY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4qI-8V-shS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="Don't know where to find the code?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9R-4l-DdB">
+                                <rect key="frame" x="0.0" y="435" width="320" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="5vm-UP-tXZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7j-LX-G55">
+                                <rect key="frame" x="60" y="227" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="kE4-cE-kxQ"/>
+                                </constraints>
+                                <state key="normal" image="QRcode"/>
+                                <connections>
+                                    <segue destination="IJa-WK-AqO" kind="show" identifier="QRCodeSegueConfig" id="a4G-7y-SPF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Connect to organization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGY-SN-xi5">
+                                <rect key="frame" x="0.0" y="20" width="320" height="46"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="BNY-ip-1JQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BNY-ip-1JQ"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Click the image to open the scanner, then scan the organization QR code to connect." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIa-OB-Ksd">
+                                <rect key="frame" x="0.0" y="107" width="320" height="77"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="WWp-GH-Esw"/>
+                                    <constraint firstAttribute="height" constant="77" id="dDa-V1-aiP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dDa-V1-aiP"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Open your IoT for Electronics starter app in Bluemix. You can find the QR code at the bottom of the Consumer app section." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gg9-6q-K9X">
+                                <rect key="frame" x="0.0" y="476" width="320" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Mje-pg-XS6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vGY-SN-xi5" firstAttribute="leading" secondItem="4qI-8V-shS" secondAttribute="leading" id="0Yc-8Z-pT8"/>
+                            <constraint firstItem="m7j-LX-G55" firstAttribute="top" secondItem="4qI-8V-shS" secondAttribute="top" constant="227" id="1Zo-Sh-tJC"/>
+                            <constraint firstItem="rIa-OB-Ksd" firstAttribute="top" secondItem="vGY-SN-xi5" secondAttribute="bottom" constant="41" id="3EE-VS-yQ6"/>
+                            <constraint firstItem="W9R-4l-DdB" firstAttribute="leading" secondItem="gg9-6q-K9X" secondAttribute="leading" id="4DB-cW-lk5"/>
+                            <constraint firstAttribute="trailing" secondItem="vGY-SN-xi5" secondAttribute="trailing" id="AhK-fm-m4v"/>
+                            <constraint firstItem="W9R-4l-DdB" firstAttribute="trailing" secondItem="gg9-6q-K9X" secondAttribute="trailing" id="Ca0-59-uo7"/>
+                            <constraint firstAttribute="trailing" secondItem="gg9-6q-K9X" secondAttribute="trailing" id="FOQ-x3-CBT"/>
+                            <constraint firstItem="gg9-6q-K9X" firstAttribute="top" secondItem="W9R-4l-DdB" secondAttribute="bottom" constant="1" id="G62-Vr-C3M"/>
+                            <constraint firstItem="rIa-OB-Ksd" firstAttribute="leading" secondItem="vGY-SN-xi5" secondAttribute="leading" id="GYw-oR-IEb"/>
+                            <constraint firstItem="m7j-LX-G55" firstAttribute="leading" secondItem="4qI-8V-shS" secondAttribute="leadingMargin" constant="44" id="J9h-kJ-MbX"/>
+                            <constraint firstItem="rIa-OB-Ksd" firstAttribute="centerX" secondItem="m7j-LX-G55" secondAttribute="centerX" id="PuT-VO-RSP"/>
+                            <constraint firstItem="gg9-6q-K9X" firstAttribute="leading" secondItem="4qI-8V-shS" secondAttribute="leading" id="Sj0-AH-Z5m"/>
+                            <constraint firstItem="vGY-SN-xi5" firstAttribute="top" secondItem="k8x-Mz-hwK" secondAttribute="bottom" id="YKx-dH-EdN"/>
+                            <constraint firstItem="rIa-OB-Ksd" firstAttribute="trailing" secondItem="vGY-SN-xi5" secondAttribute="trailing" id="ZpY-fM-muJ"/>
+                            <constraint firstItem="m7j-LX-G55" firstAttribute="top" secondItem="rIa-OB-Ksd" secondAttribute="bottom" constant="43" id="a6o-9F-UB0"/>
+                            <constraint firstItem="rIa-OB-Ksd" firstAttribute="top" secondItem="vGY-SN-xi5" secondAttribute="bottom" constant="23" id="fsb-kb-32T"/>
+                            <constraint firstItem="Yvd-Rn-1mY" firstAttribute="top" secondItem="gg9-6q-K9X" secondAttribute="bottom" constant="8" symbolic="YES" id="tWu-gQ-gWR"/>
+                            <constraint firstItem="vGY-SN-xi5" firstAttribute="top" secondItem="k8x-Mz-hwK" secondAttribute="bottom" id="vqH-dV-6Yz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vqH-dV-6Yz"/>
+                                <exclude reference="fsb-kb-32T"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connect to IoT for Electronics config" id="nKm-dZ-lFR">
+                        <barButtonItem key="backBarButtonItem" title="Configuration" id="4Ge-Db-T8J"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K51-T7-aFo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1667" y="119"/>
+        </scene>
+        <!--Scan bluemix config-->
+        <scene sceneID="w0g-tG-dic">
+            <objects>
+                <viewController title="Scan bluemix config" id="IJa-WK-AqO" customClass="QRCodeReaderViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="shr-J2-lvb"/>
+                        <viewControllerLayoutGuide type="bottom" id="vmG-9X-7DA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ehv-PO-7nH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ktM-op-AXb">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="cancel" id="AqB-bO-6fV">
+                                        <connections>
+                                            <segue destination="vVj-yr-z8Z" kind="unwind" unwindAction="unwindToParentFromQRCodeReaderWithCancel:" id="nGz-Ph-kOt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DNA-bD-eMH"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjT-93-YH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="vVj-yr-z8Z" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2137.5" y="121.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DKG-aZ-cMk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aKe-Mb-VuE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vxh-6M-cYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V38-7f-FuV" kind="relationship" relationship="rootViewController" id="QZL-A6-BSt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xx-jd-bA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="QRcode" width="212" height="212"/>
+    </resources>
+</document>

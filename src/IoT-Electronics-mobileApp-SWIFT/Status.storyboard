@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F4h-Fq-KJ9">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Status-->
+        <scene sceneID="PPN-p5-EXD">
+            <objects>
+                <viewController title="Status" id="F4h-Fq-KJ9" customClass="StatusViewController" customModule="IoT_Electronics_mobileApp_SWIFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4sf-h0-zYt"/>
+                        <viewControllerLayoutGuide type="bottom" id="JjG-oe-uQu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W9t-4a-ScP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Status_appliance_Empty" translatesAutoresizingMaskIntoConstraints="NO" id="X8b-zW-iuc">
+                                <rect key="frame" x="0.0" y="67" width="375" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="PQZ-IV-rXA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr3-hu-QmA">
+                                <rect key="frame" x="16" y="543" width="343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="w1Z-rs-7En"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="onClickButtonCmd:" destination="F4h-Fq-KJ9" eventType="touchUpInside" id="2hb-Km-jBY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtR-S0-nNy">
+                                <rect key="frame" x="0.0" y="236" width="375" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X8b-zW-iuc" firstAttribute="leading" secondItem="XtR-S0-nNy" secondAttribute="leading" id="3hd-a5-Ju6"/>
+                            <constraint firstItem="qr3-hu-QmA" firstAttribute="leading" secondItem="W9t-4a-ScP" secondAttribute="leadingMargin" constant="4" id="4QN-XZ-qQf"/>
+                            <constraint firstItem="qr3-hu-QmA" firstAttribute="leading" secondItem="W9t-4a-ScP" secondAttribute="leadingMargin" id="DUq-vb-mPU"/>
+                            <constraint firstAttribute="trailing" secondItem="X8b-zW-iuc" secondAttribute="trailing" constant="46" id="G5g-fI-Uht"/>
+                            <constraint firstItem="X8b-zW-iuc" firstAttribute="top" secondItem="4sf-h0-zYt" secondAttribute="bottom" constant="47" id="GOv-rf-OmG"/>
+                            <constraint firstItem="X8b-zW-iuc" firstAttribute="trailing" secondItem="XtR-S0-nNy" secondAttribute="trailing" id="IFf-c6-0hq"/>
+                            <constraint firstItem="qr3-hu-QmA" firstAttribute="centerX" secondItem="XtR-S0-nNy" secondAttribute="centerX" id="IUL-jU-q6L"/>
+                            <constraint firstItem="qr3-hu-QmA" firstAttribute="centerX" secondItem="X8b-zW-iuc" secondAttribute="centerX" id="PpA-4F-tYy"/>
+                            <constraint firstItem="X8b-zW-iuc" firstAttribute="leading" secondItem="W9t-4a-ScP" secondAttribute="leading" constant="47" id="Zn0-ax-FpH"/>
+                            <constraint firstAttribute="trailing" secondItem="XtR-S0-nNy" secondAttribute="trailing" id="bwm-Yk-L8A"/>
+                            <constraint firstItem="XtR-S0-nNy" firstAttribute="leading" secondItem="W9t-4a-ScP" secondAttribute="leading" id="edl-8D-RbI"/>
+                            <constraint firstItem="JjG-oe-uQu" firstAttribute="top" secondItem="qr3-hu-QmA" secondAttribute="bottom" constant="26" id="gWO-NC-rPJ"/>
+                            <constraint firstItem="X8b-zW-iuc" firstAttribute="centerY" secondItem="XtR-S0-nNy" secondAttribute="centerY" id="lqu-2M-XnC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="G5g-fI-Uht"/>
+                                <exclude reference="Zn0-ax-FpH"/>
+                                <exclude reference="4QN-XZ-qQf"/>
+                                <exclude reference="PpA-4F-tYy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Status" image="status" id="nLo-0Q-mVJ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="buttonControl" destination="qr3-hu-QmA" id="0Lr-6u-x0r"/>
+                        <outlet property="cycleLabel" destination="XtR-S0-nNy" id="dI7-KN-dnr"/>
+                        <outlet property="imageStatus" destination="X8b-zW-iuc" id="Urv-Qc-63F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Pc-ou-cRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Status_appliance_Empty" width="356" height="347"/>
+        <image name="status" width="41" height="22"/>
+    </resources>
+</document>
